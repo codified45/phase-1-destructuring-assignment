@@ -54,5 +54,10 @@ let [ , , , , , indg, ] = colors;
 let {muppetName, color, song, job, partner} = muppet;
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
-let {song2, song4} = nestedMuppet.album.theMuppetMovie;
-let {nestedJob, nestedPartner} = nestedMuppet;
+
+// Done in 2 lines:
+// let {song2, song4} = nestedMuppet.album.theMuppetMovie;
+// let {nestedJob, nestedPartner} = nestedMuppet;
+
+// Done in one line: 
+let {album:{theMuppetMovie:{song2, song4}}, nestedJob, nestedPartner} = nestedMuppet;
