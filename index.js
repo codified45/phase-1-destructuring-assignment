@@ -35,6 +35,7 @@ let [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ");
 let [bessie, , dolly, babe, little] = farmAnimals.split(" ");
 
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
+let [blackAndWhite, , black, pink, ,] = farmAnimals.split(" ");
 
 // Arrays
 
